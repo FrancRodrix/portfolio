@@ -1,0 +1,53 @@
+<div data-spy="scroll" data-target="#myScrollspy" data-offset="0" class="blog">
+  <div class=" container-fluid">
+    <div class="row">
+      <nav class="col-md-2 p-5" id="myScrollspy">
+        <ul class="list-unstyled m-4 fixed-top mt-5 pt-5 col-md-2">
+          <li>
+            <a href="/blog/{{_id}}" class=" m-3  p-2 px-3 badge badge-primary">BLOG 1</a>
+          </li>
+          <li>
+            <a href="/blog/{{_id}}" class="m-3 p-2 px-3 badge badge-secondary">BLOG 2</a>
+          </li>
+          <li>
+            <a href="/blog/{{_id}}" class=" m-3 p-2 px-3 badge badge-success">BLOG 3</a>
+          </li>
+          <li>
+            <a href="/blog/{{_id}}" class="p-2 m-3 px-3 badge badge-danger">BLOG 4</a>
+          </li>
+          <li>
+            <a href="/blog/{{_id}}" class=" m-3 p-2 px-3 badge badge-warning">BLOG 5</a>
+          </li>
+          <li>
+            <a href="/blog/{{_id}}" class=" m-3 p-2 px-3 badge badge-info">BLOG 6</a>
+          </li>
+          <li>
+            <a href="/blog/{{_id}}"class=" m-3 p-2 px-3 badge badge-light">BLOG 7</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="col-md-10">
+        {{#each blog }}
+
+        <div class="container py-5" id="mava">
+          <div class="jumbotron  p-3 p-md-5 text-white rounded bg-warning" style="background-image:url(" ");">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 font-italic">
+                {{this.title}}
+              </h1>
+              <p class="lead my-3">
+                {{this.description}}
+              </p>
+              <p class="lead mb-0">
+                <a href="/blog/{{_id}}" class="text-white font-weight-bold">See more.....</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url("/images/img3.jpeg")center/cover no-repeat fixed;
+   
+  }
+    /*navbar  */
+.logo {
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color 0.15s;
+    text-decoration: none;
+  }
+  .site-header a:hover {
+    color: rgba(6, 26, 20, 0.514);
+  }
+  #navbar-color{
+    background: linear-gradient(rgba(34,193,195),rgba(253,187,45));
+  }
+  /* navbar end */
+  
+
+  .col-md-3 {
+    /* background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)); */
+
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .col-md-9 {
+    background: #fff;
+
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .social {
+    list-style-type: none;
+  }

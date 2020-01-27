@@ -1,0 +1,41 @@
+<main>
+  <div class="container py-5">
+    <div class="row">
+      {{#each projects}}
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <a href="/project/{{_id}}">
+            <img class="card-img-top " src="{{this.image}}" style="border-bottom:1px solid #e9ecef;" />
+          </a>
+          <div class="card-body">
+            <p class="card-title">{{this.title}}</p>
+            <p class="card-text">
+              {{this.description}}
+            </p>
+            <div class="d-flex justify-content-between align-items-center" style="margin-top:10px;">
+              <div class="btn-group">
+                <a href="/project/{{_id}}" class="btn btn-sm btn-outline-secondary">
+                  <i class="fas fa-info-circle"></i> Details
+                </a>
+                <a href=" https://github.com/" class="btn btn-sm btn-outline-secondary">
+                  <i class="fab fa-github"></i> Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{/each}}
+    </div>
+  </div>
+  <nav aria-label="Page navigation example" class="d-flex justify-content-center mb-4">
+    <ul class="pagination box-shadow">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+</main>

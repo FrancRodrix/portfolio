@@ -1,0 +1,115 @@
+<div class="wrapper d-flex align-items-stretch" width="100%">
+  <!-- Sidebar Holder -->
+  <nav class="" id="sidebar">
+    <div class="sidebar-header p-4 bg-danger">
+      <h3>BLOGS!!!</h3>
+    </div>
+
+    <ul class="list-unstyled components  ">
+      <span class="badge badge-primary p-2 ml-3 mt-3">Creative</span>
+      <span class="badge badge-warning p-2 mt-3 ">Bussiness</span>
+      <span class="badge badge-success p-2 mt-3">Litreture</span>
+
+      <li>
+        <a class="p-2 d-block p-3 text-white font-weight-bold " href="#"><i class="fab fa-blogger ml-2"></i>Blog 1</a>
+      </li>
+      <li>
+        <a class=" d-block p-3 text-white font-weight-bold" href="#"><i class="far fa-address-book ml-2"></i>Blog 2</a>
+      </li>
+      <li>
+        <a class=" d-block p-3 text-white font-weight-bold" href="#"><i class="far fa-address-book ml-2"></i>Blog 3</a>
+      </li>
+      <li>
+        <a class=" d-block p-3 text-white font-weight-bold" href="#"><i class="far fa-address-book ml-2"></i>Blog 4</a>
+      </li>
+      <li>
+        <a class=" d-block p-3 text-white font-weight-bold" href="#"><i class="far fa-address-book ml-2"></i>Blog 5</a>
+      </li>
+      <li>
+        <a class=" d-block p-3 text-white font-weight-bold" href="#"><i class="far fa-address-book ml-2"></i>Blog 6</a>
+      </li>
+      <li>
+        <a class=" d-block p-3 text-white font-weight-bold" href="#"><i class="far fa-address-book ml-2"></i>Blog 7</a>
+      </li>
+    </ul>
+
+    <ul class="list-unstyled CTAs p-3   ">
+      <li>
+        <a href="" class="download mb-3 text-center d-block rounded"><button type="button"
+            class="btn btn-sm btn-danger mr-4">Download</button></a>
+      </li>
+      <li>
+        <a href="" class="article mb-3 text-center d-block rounded"><button type="button "
+            class="btn btn-sm btn-warning mr-4">Back</button></a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <!-- Page Content Holder -->
+  <div id="content">
+
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark site-header sticky-top">
+      <div class="container-fluid d-flex flex-column flex-md-row justify-content-around">
+
+        <button type="button" id="sidebarCollapse" class="navbar-btn">
+
+          <i class="fa fa-bars" aria-hidden="true"></i>
+
+        </button>
+
+
+        <a class="navbar-brand py-2" href="/"><img class="logo ml-2" height="40" width="60" src="/images/logo2.png"
+            alt="logo"></a>
+        <button class="btn btn-dark d-md-none  ml-auto navbar-toggler " type="button" data-toggle="collapse"
+          data-target="#navTabs" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-frown-o" aria-hidden="true"></i>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navTabs">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+
+
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+    <!--nav-end  -->
+    <nav aria-label="breadcrumb ">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item bc-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item bc-item"><a href="/blog">Blogs</a></li>
+
+      </ol>
+    </nav>
+    <div class="container py-3 text-white">
+
+      <div class="container py-5 blog">
+        <h1 class="text-center">{{blog.title}}</h1>
+        <img class="w-50 h-50 " src="{{blog.imgLink1}}" alt="Blog Image" style="margin-left: 220px;">
+        <p class="text-center"> {{blog.article}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>

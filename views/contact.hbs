@@ -1,0 +1,95 @@
+<div class="container contact h-50 p-2 mt-5 ">
+  <div class="row">
+    <div class="col-md-3 p-4 " style="background-color: #1c0045;">
+      <div class="contact-info mt-5">
+        <img class="mt-4 logo ml-3" src="/images/logo2.png" alt="image" />
+        <h2 class="mb-3 text-white">Contact Us</h2>
+        <h4 class="text-white">We would love to hear from you !</h4>
+      </div>
+      <div class="project-sidebar-block ">
+        <h2 class="text-white mt-3 ml-4">Queries</h2>
+        <ul class="social d-flex  ">
+          <li>
+            <a href="www.github.com" title="LinkedIn">
+              <i class="fab fa-linkedin text-white " style="font-size:25px;"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="www.github.com" title="Github">
+              <i class="fab fa-github-square text-white" style="font-size:25px;"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="www.twitter.com" title="Twitter">
+              <i class="fab fa-twitter-square text-white" style="font-size: 25px;"></i>
+            </a>
+          </li>
+          <li class="ml-3">
+            <a href="www.facebook.com" title="Facebook">
+              <i class="fab fa-facebook text-white" style="font-size: 25px;"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9 p-4">
+      <form action="/contact" method="POST">
+        {{#if errors}}
+        {{#each messages}}
+        <div class="alert alert-danger" role="alert">
+          {{this}}
+        </div>
+        {{/each}}
+        {{/if}}
+        {{#if success}}
+        <div class="alert alert-success" role="alert">
+          Thank you for contacting us. We will get back at the earliest.
+        </div>
+        {{/if}}
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="control-label col-sm-2 font-weight-bold" for="fname">First Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname"
+                value="{{fname}}" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2 font-weight-bold" for="lname">Last Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname"
+                value="{{lname}}" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2 font-weight-bold" for="mobile">Mobile Number:</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="lname" placeholder="Enter Mobile Number" name="mobile"
+                value="{{mobile}}" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2 font-weight-bold" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"
+                value="{{email}}" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2 font-weight-bold" for="comment">Comment:</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="5" name="comment" id="comment" value="{{comment}}"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-primary font-weight-bold w-25">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

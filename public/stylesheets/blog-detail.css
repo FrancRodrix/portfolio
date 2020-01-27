@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/blog-body.jpeg") center/cover no-repeat fixed;
+}
+.wrapper {
+  perspective: 1500px;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: linear-gradient(rgba(3, 47, 60), rgba(3, 47, 60)),
+    url("img17.jpeg") center/cover no-repeat fixed;
+  color: #fff;
+  transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
+  transform-origin: bottom left;
+}
+#navbar-color{
+  background: linear-gradient(rgba(34,193,195),rgba(253,187,45));
+}
+
+#sidebar.active {
+  margin-left: -250px;
+  transform: rotateY(100deg);
+}
+.blog {
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  font-family: "PT Serif", serif;
+}
+
+#sidebar ul li a:hover {
+  background:red;
+}
+/* navbar  */
+.logo {
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color 0.15s;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color:white;
+}
+/* navbar end */

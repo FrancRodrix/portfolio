@@ -1,0 +1,110 @@
+<div class="inner p-3 ">
+  <nav class="nav nav-masthead justify-content-end ">
+    <a class="nav nav-link" href="https://github.com/" title="Github">
+      <i class="fab fa-github-square  text-white" style="font-size:35px;"></i>
+    </a>
+    <a class=" nav nav-link" href="https://twitter.com/login" title="Twitter">
+      <i class="fab fa-twitter-square text-white " style="font-size: 35px;"></i>
+    </a>
+    <a class="nav nav-link" href="https://www.facebook.com/" title="Facebook">
+      <i class="fab fa-facebook text-white " style="font-size: 35px;"></i>
+    </a>
+  </nav>
+</div>
+
+<div class="d-flex mt-n4">
+  <h3 class="ml-4 text-white">RECENT PROJECTS</h3>
+  <a href="/project">
+    <h5 class="mt-2 text-white" style="margin-left: 390px;"> VIEW ALL</h5>
+  </a>
+</div>
+{{!-- Recent projects --}}
+<div class="row col-md-9 d-flex mt-2">
+  {{#each projects}}
+  <div class="col-md-3">
+    <div class="card mb-4 box-shadow">
+      <a href="/project/{{_id}}">
+        <img class="card-img-top " src="{{this.image}}" style="border-bottom:1px solid #e9ecef;" />
+      </a>
+      <div class="card-body">
+        <p class="card-title">{{this.title}}</p>
+        <p class="card-text">
+          {{this.description}}
+        </p>
+        <div class="d-flex justify-content-between align-items-center" style="margin-top:10px;">
+          <div class="btn-group">
+            <a href="/project/{{_id}}" class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-info-circle"></i> Details
+            </a>
+            <a href="  https://github.com/" class="btn btn-sm btn-outline-secondary">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{!-- Recent Projects end --}}
+<div class="d-flex mt-3">
+  <h3 class="ml-4 text-white">RECENT BLOGS</h3>
+  <a href="/blog">
+    <h5 class="mt-2 text-white" style="margin-left: 430px;"> VIEW ALL</h5>
+  </a>
+</div>
+{{!-- Recent posts --}}
+<section class="row col-md-9 mt-3 ">
+  {{#each blogs}}
+  <div class="col-md-3">
+    <div class="card mb-4 box-shadow">
+      <a href="/blog/{{_id}}">
+        <img class="card-img-top " src="{{this.imgLink1}}" style="border-bottom:1px solid #e9ecef;" />
+      </a>
+      <div class="card-body">
+        <p class="card-title">{{this.title}}</p>
+        <p class="card-text">
+          {{this.description}}
+        </p>
+        <div class="d-flex justify-content-between align-items-center" style="margin-top:10px;">
+          <div class="btn-group">
+            <a href="/blog/{{_id}}" class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-info-circle"></i> Details
+            </a>
+            <a href=" https://github.com/" class="btn btn-sm btn-outline-secondary">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{/each}}
+
+
+</section>
+{{!-- Recent posts end --}}
+
+<!-- card -->
+<div class="col-md-4 mr-5 pt-4 pb-5 float-right name-card rounded">
+  <div class=" text-center ">
+    <img class="w-100 h-100 rounded" src="/images/profile.png" alt="" />
+    <h3 class="mt-3">FRANC RODRIGUES</h3>
+    <p class="text-center">FULL STACK DEVELOPER</p>
+    <p>
+      I am B.E graduate currently undergoing training in Full Stack Development and and enhancing my
+      skills in software development and actievly seeking for the employment
+    </p>
+    <form action="/subscribe" method="POST" class="form-inline ml-5">
+      <h6 class="text-uppercase ml-5 ">subscribe new letter</h6>
+      <input class="form-control form-control-sm mr-3 w-75" type="text" name="email" placeholder="Please enter email "
+        aria-label="Search">
+      <button class="btn btn-sm btn-warning"> <i class="fa fa-bell" aria-hidden="true"></i>
+      </button>
+    </form>
+    {{#if success}}
+    <p class="text-success">Subscribed successfully</p>
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,61 @@
+.logo {
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  #navbar-color{
+    background: linear-gradient(rgba(0,242,96),rgba(5,117,230));
+}
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color 0.15s;
+    text-decoration: none;
+  }
+  .site-header a:hover {
+    color: rgba(6, 26, 20, 0.514);
+  }
+  
+
+
+.project-one {
+  position: relative;
+}
+.project-one::before {
+  content: "";
+  background: #181b24;
+  width: 240px;
+  height: 220px;
+  position: absolute;
+  transform: scale(0);
+  transition: all 1s ease;
+  opacity: 0;
+}
+.project-one:hover:before {
+  transform: scale(1);
+  opacity: 0.5;
+}
+
+.icon {
+  color: #ffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 96px;
+  font-size: 6rem;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1.3s ease;
+}
+.icon:hover {
+  color: #899395;
+}
+.project-one:hover .icon {
+  opacity: 1;
+  transform: scale(1) translate(-50%, -50%);
+}
+#awards {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/numbers-bcg.jpeg") center/cover no-repeat fixed;
+  font-size: 60px;
+}

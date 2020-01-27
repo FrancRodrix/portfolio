@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Shadows+Into+Light&display=swap');
+   /*navbar  */
+.logo {
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+}
+#navbar-color{
+  background: linear-gradient(rgba(34,193,195),rgba(253,187,45));
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color 0.15s;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: rgba(6, 26, 20, 0.514);
+}
+/* navbar end */
+
+/* home css */
+
+
+body{
+        font-family: 'Karla', sans-serif;
+        background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0,0.3))
+  ,url("/images/img7.jpeg") center/cover no-repeat fixed;
+ 
+
+    }
+      .name-card {
+        border: 2px solid white;
+        background-color: honeydew;
+        margin-top: -820px;
+        box-shadow: 10px ivory;
+           
+      }
+      @media(max-width:768px){
+        .name-card{
+          margin-top: 100px;
+        }
+      }
+
+      h3{
+        font-family: 'Shadows Into Light', cursive;
+
+      }
+      /* home css end */
+      /* background project-detail */
+      #project-detail{
+              background: linear-gradient(rgba(240,255,0),rgba(240,255,0));
+        
+      }
+      /* project  css */
+      .card{
+        transition: 0.5s ease-in-out;
+      }
+      .card:hover{
+        transform: scale(1.1);
+      }
+      /* project css end */
+
